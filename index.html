@@ -81,9 +81,9 @@
             </ul>
 
             <div class="navbar-unique-buttons">
-                <a href="tel:+971542528822" class="navbar-unique-btn primary-button">Call Us</a>
-                <a class="navbar-unique-btn button secondary-button" onclick="openUniqueContactModal()">Free Site
-                    Visit</a>
+                <!-- <a href="tel:+971542528822" class="navbar-unique-btn primary-button">Call Us</a> -->
+                <a class="navbar-unique-btn button secondary-button" onclick="openUniqueContactModal()">GET FREE
+                    QUOTE</a>
             </div>
         </div>
     </nav>
@@ -105,7 +105,7 @@
     justify-content: center; 
     font-size: 18px;
     font-weight: 600;
-    ">FreeSite Visit</a>
+    ">GET FREE QUOTE</a>
             </div>
         </div>
     </nav>
@@ -113,9 +113,10 @@
     <!-- Mobile Bottom Buttons -->
     <div class="navbar-unique-bottom-buttons" id="bottomButtons">
         <div class="navbar-unique-bottom-content">
-            <a href="tel:+971542528822" class="navbar-unique-bottom-btn navbar-unique-bottom-btn-call">Call Us</a>
-            <a class="navbar-unique-bottom-btn navbar-unique-bottom-btn-visit" onclick="openUniqueContactModal()">Free
-                Site Visit</a>
+            <a href="tel:+971542528822" class="navbar-unique-bottom-btn navbar-unique-bottom-btn-call">
+                <i class="fa-solid fa-phone" style="margin-right: 5px;"></i>Call Us</a>
+            <a class="navbar-unique-bottom-btn navbar-unique-bottom-btn-visit" onclick="openUniqueContactModal()">
+                <i class="fa-brands fa-whatsapp " style="margin-right: 5px;"></i>GET FREE QUOTE</a>
         </div>
     </div>
 
@@ -123,7 +124,7 @@
 
     <section class="hero-main-area" id="home">
 
-        <div class="container" style="padding-bottom: 100px;">
+        <div class="" style="padding-bottom: 100px;">
 
             <!-- Hero Content Wrapper -->
             <div class="hero-content-wrapper">
@@ -131,20 +132,21 @@
                 <!-- Main Hero Content -->
                 <div class="hero-main-content text-start text-lg-start ">
                     <h5 class="font-weight-medium font-small mb-3"
-                        style="background-color: white; color:#001E61; border-radius: 13px; padding: 5px 12px;">
+                        style="background-color: #001E61; color:white; text-align: center; border-radius: 13px; padding: 5px 12px;">
                         Abu Dhabi's Premier Cleaning Company
                     </h5>
 
-                    <div class="mb-2">
-                        <h1 class="font-weight-bold " style="font-size: 55px;">
+                    <div class="mb-2 topHed">
+                        <h1 class="font-weight-bold mainHedCon ">
                             From Messy to Magnificent in Just One Call.
                         </h1>
                     </div>
-                    <h5 class="font-weight-medium mb-4 ">Need professional cleaning? Worldstar FM is Abu Dhabi's trusted
+                    <h5 class="font-weight-medium mb-4  subTitle">Need professional cleaning? Worldstar FM is Abu
+                        Dhabi's trusted
                         choice for spotless results.</h5>
 
                     <!-- Buttons -->
-                   
+
 
                     <!-- Features -->
                     <div class="d-flex flex-column flex-md-row gap-3 text-start removePhone">
@@ -170,28 +172,57 @@
                             <p class="font-weight-medium font-small mb-0">Night Shift Availability</p>
                         </div>
                     </div>
-                    <style>
-                        .removePhone {
-                            display: block;
-                        }
 
-
-
-
-                        @media (max-width: 1400px) {
-                            .removePhone {
-                                display: none !important;
-                            }
-
-
-                        }
-                    </style>
                 </div>
+                <style>
+                    .removePhone {
+                        display: block;
+                    }
+
+                    .mainHedCon {
+                        font-size: 35px;
+                    }
+
+                    .topHed {
+                        text-align: center;
+                    }
+
+                    .subTitle {
+                        text-align: center;
+
+                    }
+
+                    @media (min-width:700px) {
+                        .subTitle {
+                            text-align: start;
+                        }
+
+                        .mainHedCon {
+                            font-size: 55px;
+                        }
+
+                        .topHed {
+                            text-align: left;
+                        }
+
+                    }
+
+
+                    @media (max-width: 1400px) {
+                        .removePhone {
+                            display: none !important;
+                        }
+
+
+
+
+                    }
+                </style>
 
                 <!-- Contact Form -->
                 <div class="contact-form-container-topBar bg-white text-dark p-4 rounded shadow  " id="contactform">
-                    <h2 class="form-title mb-2">Send us a message</h2>
-                    <p class="form-subtitle mb-4">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    <h2 class="form-title mb-2">Schedule Free Site Visit </h2>
+                    <p class="form-subtitle mb-4">Tell us what you need. We'll get back to you Super fast.</p>
 
                     <form id="contactForm" novalidate="">
                         <!-- Name & Mobile -->
@@ -318,6 +349,27 @@
         </div>
     </section>
 
+    <section class="logo-section mb-2 mb-md-0 ">
+        <p class="font-weight-medium font-medium text-center mb-2   ">Our Valued Clients</p>
+        <div class="logo-container">
+            <!-- 5 logos for desktop, duplicated for mobile animation -->
+            <img class="client-logo" src="./website-assets/images/landing-page/lulu-logo.svg" alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/al-bahar-logo.svg"
+                alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/admd-logo.svg" alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/reneco-logo.svg" alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/talabat-logo.svg" alt="LuLu Retail Logo">
+            <!-- Duplicates for mobile animation -->
+            <img class="client-logo" src="./website-assets/images/landing-page/lulu-logo.svg" alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/al-bahar-logo.svg"
+                alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/admd-logo.svg" alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/reneco-logo.svg" alt="LuLu Retail Logo">
+            <img class="client-logo" src="./website-assets/images/landing-page/talabat-logo.svg" alt="LuLu Retail Logo">
+        </div>
+
+
+    </section>
 
     <!-- new area -->
 
@@ -610,35 +662,7 @@
     </section>
 
     <section class="services-sectionS  section-spacing" id="service" style="background: #ebebed;">
-        <section class="logo-section mb-2 mb-md-0 ">
-            <p class="font-weight-medium font-medium text-center mb-2   ">Our Valued Clients</p>
-            <div class="logo-container">
-                <!-- 5 logos for desktop, duplicated for mobile animation -->
-                <img class="client-logo" src="./website-assets/images/landing-page/lulu-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/al-bahar-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/admd-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/reneco-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/talabat-logo.svg"
-                    alt="LuLu Retail Logo">
-                <!-- Duplicates for mobile animation -->
-                <img class="client-logo" src="./website-assets/images/landing-page/lulu-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/al-bahar-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/admd-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/reneco-logo.svg"
-                    alt="LuLu Retail Logo">
-                <img class="client-logo" src="./website-assets/images/landing-page/talabat-logo.svg"
-                    alt="LuLu Retail Logo">
-            </div>
 
-
-        </section>
         <div class="container pt-4 pt-md-0 ">
             <div class="row justify-content-center text-center">
                 <div class="col-md-6">
@@ -878,8 +902,8 @@
                 </div>
                 <div class="col-md-5">
                     <div class="contact-form-container" id="contactform">
-                        <h2 class="form-title">Send us a message</h2>
-                        <p class="form-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+                        <h2 class="form-title">Schedule Free Site Visit </h2>
+                        <p class="form-subtitle">Tell us what you need. We'll get back to you Super fast.</p>
 
                         <form id="contactForm" novalidate="">
 
@@ -945,7 +969,7 @@
                     <span class="unique-contact-modal-star">★</span> Get Your Quote
                 </h2>
                 <p class="unique-contact-modal-subtitle">
-                    Fill out the form below and our team will get back to you within 24 hours.
+                    Tell us what you need. We'll get back to you Super fast.
                 </p>
                 <button class="unique-contact-modal-close" onclick="closeUniqueContactModal()">×</button>
             </div>
@@ -1019,16 +1043,7 @@
         </div>
     </div>
     <!-- Floating Buttons Wrapper-->
-    <div class="floating-buttons-wrapper">
 
-        <a href="https://api.whatsapp.com/send?phone=+971542528822&text=Hi,%20I%20want%20a%20free%20quote%20for%20your%20cleaning%20contract%20services."
-            class="floating-btn whatsapp-btn" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-
-
-    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
