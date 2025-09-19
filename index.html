@@ -115,7 +115,7 @@
         <div class="navbar-unique-bottom-content">
             <a href="tel:+971542528822" class="navbar-unique-bottom-btn navbar-unique-bottom-btn-call">
                 <i class="fa-solid fa-phone" style="margin-right: 5px;"></i>Call Us</a>
-            <a class="navbar-unique-bottom-btn navbar-unique-bottom-btn-visit"  href="https://wa.me/971542528822">
+            <a class="navbar-unique-bottom-btn navbar-unique-bottom-btn-visit" href="https://wa.me/971542528822">
                 <i class="fa-brands fa-whatsapp " style="margin-right: 5px;"></i>WhatsApp</a>
         </div>
     </div>
@@ -131,10 +131,21 @@
 
                 <!-- Main Hero Content -->
                 <div class="hero-main-content text-start text-lg-start ">
-                    <h5 class="font-weight-medium font-small mb-3"
-                        style="background-color: #001E61; color:white; text-align: center; border-radius: 13px; padding: 5px 12px;">
-                        Abu Dhabi's Premier Cleaning Company
-                    </h5>
+                             <div class="small" style="display: flex; align-items: center; justify-content: center; ">
+                            <h5 class=" font-small mb-3 "
+                                style="background-color:  #001E61; color:white; text-align: center; border-radius: 13px; padding: 5px 15px;">
+                                UAE's PREMIUM CLEANING COMPANY
+                            </h5>
+                            </div>
+                            <style>
+                               @media(max-width:1000px){
+                                .small{
+                                    width: 100%;
+                                    
+                                }
+                               }
+                            </style>
+                        
 
                     <div class="mb-2 topHed">
                         <h1 class="font-weight-bold mainHedCon ">
@@ -220,11 +231,13 @@
                 </style>
 
                 <!-- Contact Form -->
-                <div class="contact-form-container-topBar bg-white text-dark p-4 rounded shadow  " id="contactform">
+                 <div>
+                <div class="contact-form-container-topBar bg-white text-dark p-4 rounded shadow  " id="contactform"
+                    >
                     <h2 class="form-title mb-2">Schedule Free Site Visit </h2>
-                    <p class="form-subtitle mb-4">Tell us what you need. We'll get back to you Super fast.</p>
-
-                    <form id="contactForm" novalidate="">
+                    <p class="form-subtitle mb-4">Tell us what you need. We'll get back <br> to you Super fast.</p>
+                  
+                    <form id="contactForm" novalidate="" style="background-color: white;">
                         <!-- Name & Mobile -->
                         <div class="row g-3 mb-3">
                             <div class="col-6 form-area">
@@ -265,9 +278,10 @@
                         <button type="submit" class="btn  w-100 "
                             style="background-color: #20A7C7; font-weight: 800; color: #fff; height: 50px;"
                             onclick="sendSubmit(event,`topForm`)">
-                            Send Message
+                            Book Now
                         </button>
                     </form>
+                </div>
                 </div>
 
             </div>
@@ -949,8 +963,8 @@
                                     placeholder="Your Message (optional)"></textarea>
                             </div>
 
-                            <button type="submit" class="submit-btn" onclick="sendSubmit(event,`BottomForm`)">Send
-                                Message</button>
+                            <button type="submit" class="submit-btn" onclick="sendSubmit(event,`BottomForm`)">Book
+                                Now</button>
                         </form>
 
                     </div>
@@ -1035,7 +1049,7 @@
 
                     <!-- Action Buttons -->
                     <button type="submit" onclick="send(event)" class="unique-contact-btn-primary">
-                        Send Request
+                        Book Now
                     </button>
 
                 </form>
