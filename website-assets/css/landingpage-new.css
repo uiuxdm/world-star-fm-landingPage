@@ -6,6 +6,22 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 100px;
+    /* header height */
+}
+
+.hide-lg {
+    display: none;
+}
+
+/* Show only on large screens (≥ 1024px) */
+@media (min-width: 1400px) {
+    .hide-lg {
+        display: list-item;
+    }
+}
+
 :root {
     --primary-bg: #FFFDFD;
     --secondary-bg: #000000;
@@ -174,9 +190,10 @@ a {
     display: flex;
     align-items: center;
 }
+
 @media (min-width: 768px) {
     .hero-main-area {
-            padding: 20px 20px 0px 20px;
+        padding: 20px 20px 0px 20px;
 
     }
 }
@@ -214,7 +231,7 @@ a {
         align-items: flex-start;
         justify-content: space-between;
         gap: 2rem;
-        margin:10px 60px 30px 60px;
+        margin: 10px 60px 30px 60px;
     }
 
     .hero-main-content {
@@ -244,7 +261,7 @@ a {
 
     .contact-form-container-topBar {
         flex: 0 0 450px;
-        
+
     }
 }
 
@@ -1615,7 +1632,7 @@ a {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 60px 16px;
+        padding: 20px 16px;
     }
 
     .section-title-t1 {
@@ -1674,7 +1691,7 @@ a {
     }
 
     .cta-section-t1 {
-        padding: 32px 20px;
+        padding: 10px 10px;
     }
 }
 
@@ -1794,7 +1811,7 @@ a {
 
 .title-area-a1 {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 
@@ -1922,7 +1939,7 @@ a {
 }
 
 @media (max-width: 480px) {
-   
+
     .section-title-a1 {
         font-size: 1.8rem;
     }
@@ -2253,7 +2270,7 @@ a {
 /* Responsive Design */
 @media (max-width: 768px) {
     .why-different {
-        padding: 60px 15px;
+        padding: 10px 1px;
     }
 
     .section-header h2 {
@@ -2552,28 +2569,35 @@ a {
         transform: translateY(0);
     }
 }
+
 .testimonial-row-wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .testimonial-row-wrapper::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+    display: none;
+    /* Chrome, Safari */
 }
 
 .testimonial-row-wrapper {
-  -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .row.flex-nowrap {
-  display: flex;
-  flex-wrap: nowrap; /* prevents wrapping on small screens */
+    display: flex;
+    flex-wrap: nowrap;
+    /* prevents wrapping on small screens */
 }
 
 .col-md-4.flex-shrink-0 {
-  flex: 0 0 auto; /* each card keeps its width */
-  max-width: 80%; /* adjust for mobile view */
+    flex: 0 0 auto;
+    /* each card keeps its width */
+    max-width: 80%;
+    /* adjust for mobile view */
 }
 
 .form-control.error {
