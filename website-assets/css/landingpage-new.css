@@ -695,11 +695,24 @@ a {
     /* margin-bottom: 15px; */
     text-align: left;
 }
+.form-title-end {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    color: black;
+    margin-bottom: 15px;
+    text-align: left;
+}
 
 .form-subtitle {
     font-size: var(--font-size-small);
     color: white;
     /* margin-bottom: 40px; */
+    line-height: 1.5;
+} 
+.form-subtitle-end {
+    font-size: var(--font-size-small);
+    color: black;
+    margin-bottom: 40px;
     line-height: 1.5;
 }
 
