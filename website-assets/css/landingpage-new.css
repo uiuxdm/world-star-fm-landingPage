@@ -685,21 +685,21 @@ a {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .form-title {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
-    color: var(--primary-color);
-    margin-bottom: 15px;
+    color: white;
+    /* margin-bottom: 15px; */
     text-align: left;
 }
 
 .form-subtitle {
     font-size: var(--font-size-small);
-    color: var(--tertiary-text-color);
-    margin-bottom: 40px;
+    color: white;
+    /* margin-bottom: 40px; */
     line-height: 1.5;
 }
 
@@ -1293,7 +1293,7 @@ a {
 }
 
 .navbar-unique-bottom-btn-call {
-    background:  #1e3a8a;
+    background: #1e3a8a;
 }
 
 .navbar-unique-bottom-btn-visit {
@@ -1337,7 +1337,7 @@ a {
     }
 
     .navbar-unique-mobile-btn {
-        padding: 8px 12px;
+        padding: 4px 0px;
         font-size: 11px;
     }
 
@@ -1489,7 +1489,7 @@ a {
 
 .section-header-t1 {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 
 }
 
@@ -1516,7 +1516,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .feature-card-t1 {
@@ -1589,7 +1589,9 @@ a {
 /* Call to Action Section */
 .cta-section-t1 {
     text-align: center;
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin: 30px 0px 30px 0px;
+
     padding: 50px;
     background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #374151 100%);
     border-radius: 20px;
@@ -1664,7 +1666,8 @@ a {
     }
 
     .cta-section-t1 {
-        padding: 40px 30px;
+        margin: 0px;
+        /* padding-bottom: 180px ;  */
     }
 
     .cta-title-t1 {
@@ -1691,7 +1694,7 @@ a {
     }
 
     .cta-section-t1 {
-        padding: 10px 10px;
+        padding: 30px 20px;
     }
 }
 
@@ -1710,7 +1713,7 @@ a {
 
 .text-content-a2 {
     text-align: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     /* tighter spacing */
 }
 
@@ -1843,7 +1846,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .service-card-a1 {
@@ -2166,7 +2169,7 @@ a {
 
 .section-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .section-header h2 {
@@ -2360,7 +2363,7 @@ a {
 
 .text-content-a2 {
     text-align: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     width: 100%;
 }
 
@@ -2608,4 +2611,81 @@ a {
     font-size: 13px;
     margin-top: 4px;
     color: #dc3545;
+}
+
+@keyframes slideArrow {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+.sliding-arrow {
+    margin-right: 15px;
+    font-size: 1.4em;
+    color: #007bff;
+    display: none;
+    animation: slideArrow 2s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .sliding-arrow {
+        display: inline-block;
+        right: 20px;
+    }
+}
+
+.arrow-div {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red;  */
+    width: 100%;
+}
+
+.removePhone {
+    display: block;
+}
+
+.mainHedCon {
+    font-size: 35px;
+}
+
+.topHed {
+    text-align: center;
+}
+
+.subTitle {
+    text-align: center;
+
+}
+
+@media (min-width:700px) {
+    .subTitle {
+        text-align: start;
+    }
+
+    .mainHedCon {
+        font-size: 55px;
+    }
+
+    .topHed {
+        text-align: left;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+    .removePhone {
+        display: none !important;
+    }
+
+
+
+
 }

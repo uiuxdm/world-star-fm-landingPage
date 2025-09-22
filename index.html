@@ -86,7 +86,7 @@
                 <li class="navbar-unique-menu-item hide-lg">
                     <a href="#why-different" class="navbar-unique-menu-link">Why We Are Different</a>
                 </li>
-                
+
             </ul>
 
             <div class="navbar-unique-buttons">
@@ -109,12 +109,12 @@
 
             <div class="navbar-unique-mobile-buttons col-6">
                 <a class="navbar-unique-mobile-btn button primary-button" onclick="openUniqueContactModal()" style="
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    font-size: 18px;
-    font-weight: 600;
-    ">GET FREE QUOTE</a>
+                  width: 100%;
+                  display: flex;
+                  justify-content: center; 
+                  font-size: 14px;
+                  font-weight: 500;
+                  ">GET FREE QUOTE</a>
             </div>
         </div>
     </nav>
@@ -194,58 +194,17 @@
                     </div>
 
                 </div>
-                <style>
-                    .removePhone {
-                        display: block;
-                    }
-
-                    .mainHedCon {
-                        font-size: 35px;
-                    }
-
-                    .topHed {
-                        text-align: center;
-                    }
-
-                    .subTitle {
-                        text-align: center;
-
-                    }
-
-                    @media (min-width:700px) {
-                        .subTitle {
-                            text-align: start;
-                        }
-
-                        .mainHedCon {
-                            font-size: 55px;
-                        }
-
-                        .topHed {
-                            text-align: left;
-                        }
-
-                    }
-
-
-                    @media (max-width: 1400px) {
-                        .removePhone {
-                            display: none !important;
-                        }
-
-
-
-
-                    }
-                </style>
+                
 
                 <!-- Contact Form -->
                 <div>
-                    <div class="contact-form-container-topBar bg-white text-dark p-4 rounded shadow  " id="contactform">
-                        <h2 class="form-title mb-2">Schedule Free Site Visit </h2>
-                        <p class="form-subtitle mb-4">Tell us what you need. We'll get back <br> to you Super fast.</p>
-
-                        <form id="contactForm" novalidate="" style="background-color: white;">
+                    <div class="contact-form-container-topBar  text-dark  rounded shadow  " id="contactform">
+                        <div class="p-4 " style="background:#001E61; border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                        <h2 class="form-title mb-2">Schedule Free Site Visit </h2> 
+                        <p class="form-subtitle ">Tell us what you need. We'll get back <br> to you Super fast.</p>
+                        </div>
+                        <div class="p-4 bg-white" style="border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;">
+                        <form id="contactForm" novalidate="p-4" style="background-color: white; ">
                             <!-- Name & Mobile -->
                             <div class="row g-3 mb-3">
                                 <div class="col-6 form-area">
@@ -279,16 +238,17 @@
                                 <label class="form-label">Message (optional)</label>
                                 <textarea id="userMessage" name="userMessage" class="form-control"
                                     style="height: 80px; margin-bottom: 30px;"
-                                    placeholder="Your Requirements"></textarea>
+                                    placeholder="You Cleaning Requirements"></textarea>
                             </div>
 
                             <!-- Submit -->
                             <button type="submit" class="btn  w-100 "
-                                style="background-color: #20A7C7; font-weight: 800; color: #fff; height: 50px;"
+                                style="background-color: #001E61; font-weight: 800; color: #fff; height: 50px;"
                                 onclick="sendSubmit(event,`topForm`)">
-                                Book Now
+                                BOOK NOW
                             </button>
                         </form>
+                        </div>
                     </div>
                 </div>
 
@@ -540,9 +500,10 @@
                     </h4>
                 </div>
                 <div
-                    class="col-md-6 d-flex align-items-start align-items-md-end justify-content-start justify-content-md-end">
-                    <div class="btn-group gap-2">
+                    class="col-md-6 d-flex align-items-start align-items-md-end justify-content-start justify-content-md-end" style="width: 100%;">
+                    <div class="btn-group gap-2 arrow-div">
                         <a class="tertiary-button button" onclick="openUniqueContactModal()">Get a Quote</a>
+                        <span class="sliding-arrow">→</span>
                         <!-- <a class="primary-button button" href="https://www.google.com/maps/place/World+Star+Facilities+Management/@24.3777416,54.5187966,17z/data=!4m18!1m9!3m8!1s0x3e5e47d87d220f6f:0x24ec086cb9b43388!2sWorld+Star+Facilities+Management!8m2!3d24.3777417!4d54.5236675!9m1!1b1!16s%2Fg%2F11vf9rzf80!3m7!1s0x3e5e47d87d220f6f:0x24ec086cb9b43388!8m2!3d24.3777417!4d54.5236675!9m1!1b1!16s%2Fg%2F11vf9rzf80?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D">More Reviews </a> -->
                     </div>
                 </div>
@@ -868,8 +829,7 @@
     </section>
 
     <!-- this is contact section -->
-    <section class="" style="background-color: #ffff;
-        padding-bottom: 50px;">
+    <section class="">
         <div class="container">
             <!-- Call to Action Section -->
             <div class="cta-section-t1">
@@ -972,8 +932,8 @@
                                     placeholder="Your Message (optional)"></textarea>
                             </div>
 
-                            <button type="submit" class="submit-btn" onclick="sendSubmit(event,`BottomForm`)">Book
-                                Now</button>
+                            <button type="submit" class="submit-btn" onclick="sendSubmit(event,`BottomForm`)">BOOK NOW
+                                </button>
                         </form>
 
                     </div>
@@ -1058,7 +1018,7 @@
 
                     <!-- Action Buttons -->
                     <button type="submit" onclick="send(event)" class="unique-contact-btn-primary">
-                        Book Now
+                        BOOK NOW
                     </button>
 
                 </form>
