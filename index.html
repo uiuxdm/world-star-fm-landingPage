@@ -98,7 +98,16 @@
     </nav>
 
     <!-- Mobile Navbar -->
+    <div class="navbar-unique-mobile message-container">
+        
+           
+            <p class="message-text">
+                🚫 PLEASE NOTE: CURRENTLY WE ARE NOT HIRING
+            </p>
+        
+    </div>
     <nav class="navbar-unique-mobile" id="mobileNavbar">
+
         <div class="navbar-unique-mobile-content">
             <div class="col-6">
                 <a href="#home" class="navbar-unique-mobile-logo">
@@ -194,60 +203,62 @@
                     </div>
 
                 </div>
-                
+
 
                 <!-- Contact Form -->
                 <div>
                     <div class="contact-form-container-topBar  text-dark  rounded shadow  " id="contactform">
-                        <div class="p-4 " style="background:#001E61; border-top-left-radius: 6px; border-top-right-radius: 6px;">
-                        <h2 class="form-title mb-2">Schedule Free Site Visit </h2> 
-                        <p class="form-subtitle ">Tell us what you need. We'll get back <br> to you Super fast.</p>
+                        <div class="p-4 "
+                            style="background:#001E61; border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                            <h2 class="form-title mb-2">Schedule Free Site Visit </h2>
+                            <p class="form-subtitle ">Tell us what you need. We'll get back <br> to you Super fast.</p>
                         </div>
-                        <div class="p-4 bg-white" style="border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;">
-                        <form id="contactForm" novalidate="p-4" style="background-color: white; ">
-                            <!-- Name & Mobile -->
-                            <div class="row g-3 mb-3">
-                                <div class="col-6 form-area">
-                                    <label class="form-label">Your Name *</label>
-                                    <input type="text" id="userName" name="userName" class="form-control"
-                                        placeholder="Your Name" required="">
+                        <div class="p-4 bg-white"
+                            style="border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;">
+                            <form id="contactForm" novalidate="p-4" style="background-color: white; ">
+                                <!-- Name & Mobile -->
+                                <div class="row g-3 mb-3">
+                                    <div class="col-6 form-area">
+                                        <label class="form-label">Your Name *</label>
+                                        <input type="text" id="userName" name="userName" class="form-control"
+                                            placeholder="Your Name" required="">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label form-area">Your Mobile *</label>
+                                        <input type="text" id="userPhone" name="userPhone" class="form-control"
+                                            placeholder="+971 55 1234567" required="">
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <label class="form-label form-area">Your Mobile *</label>
-                                    <input type="text" id="userPhone" name="userPhone" class="form-control"
-                                        placeholder="+971 55 1234567" required="">
-                                </div>
-                            </div>
 
-                            <!-- Company & Location -->
-                            <div class="row g-3 mb-3">
-                                <div class="col-6">
-                                    <label class="form-label form-area">Company Name</label>
-                                    <input type="text" id="companyName" name="companyName" class="form-control"
-                                        placeholder="Your Company">
+                                <!-- Company & Location -->
+                                <div class="row g-3 mb-3">
+                                    <div class="col-6">
+                                        <label class="form-label form-area">Company Name</label>
+                                        <input type="text" id="companyName" name="companyName" class="form-control"
+                                            placeholder="Your Company">
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label form-area">Location</label>
+                                        <input type="text" id="userLocation" name="userLocation" class="form-control"
+                                            placeholder="Your Location">
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                    <label class="form-label form-area">Location</label>
-                                    <input type="text" id="userLocation" name="userLocation" class="form-control"
-                                        placeholder="Your Location">
+
+                                <!-- Message -->
+                                <div class="mb-3">
+                                    <label class="form-label">Message (optional)</label>
+                                    <textarea id="userMessage" name="userMessage" class="form-control"
+                                        style="height: 80px; margin-bottom: 30px;"
+                                        placeholder="You Cleaning Requirements"></textarea>
                                 </div>
-                            </div>
 
-                            <!-- Message -->
-                            <div class="mb-3">
-                                <label class="form-label">Message (optional)</label>
-                                <textarea id="userMessage" name="userMessage" class="form-control"
-                                    style="height: 80px; margin-bottom: 30px;"
-                                    placeholder="You Cleaning Requirements"></textarea>
-                            </div>
-
-                            <!-- Submit -->
-                            <button type="submit" class="btn  w-100 "
-                                style="background-color: #001E61; font-weight: 800; color: #fff; height: 50px;"
-                                onclick="sendSubmit(event,`topForm`)">
-                                BOOK NOW
-                            </button>
-                        </form>
+                                <!-- Submit -->
+                                <button type="submit" class="btn  w-100 "
+                                    style="background-color: #001E61; font-weight: 800; color: #fff; height: 50px;"
+                                    onclick="sendSubmit(event,`topForm`)">
+                                    BOOK NOW
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -499,8 +510,8 @@
                     <h4 class="font-xlarge font-weight-bold ">Successful Partnerships with Our Valued Clients Worldwide
                     </h4>
                 </div>
-                <div
-                    class="col-md-6 d-flex align-items-start align-items-md-end justify-content-start justify-content-md-end" style="width: 100%;">
+                <div class="col-md-6 d-flex align-items-start align-items-md-end justify-content-start justify-content-md-end"
+                    style="width: 100%;">
                     <div class="btn-group gap-2 arrow-div">
                         <a class="tertiary-button button" onclick="openUniqueContactModal()">Get a Quote</a>
                         <span class="sliding-arrow">→</span>
@@ -933,7 +944,7 @@
                             </div>
 
                             <button type="submit" class="submit-btn" onclick="sendSubmit(event,`BottomForm`)">BOOK NOW
-                                </button>
+                            </button>
                         </form>
 
                     </div>
