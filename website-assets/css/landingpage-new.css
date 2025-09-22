@@ -2708,12 +2708,19 @@ a {
 /* ///////////////////////////////// */
 
 .message-container {
-    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  display: none;
+}
+
+/* Show only on mobile (≤ 768px) */
+@media (max-width: 1000px) {
+  .message-container {
     display: flex;
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 10px; 
+    height: 10px;
+  }
 }
 
 .icon {
