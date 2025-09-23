@@ -255,7 +255,7 @@ function sendSubmit(event, formType) {
 
     let isValid = true;
 
-    console.log(9999, name, phone, currentCompany, message, location);
+    // console.log(9999, name, phone, currentCompany, message, location);
 
     if (formType == 'topForm') {
         // Validate Name
