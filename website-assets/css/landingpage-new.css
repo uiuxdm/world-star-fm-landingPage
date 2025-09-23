@@ -2708,19 +2708,19 @@ a {
 /* ///////////////////////////////// */
 
 .message-container {
-  display: none;
+    display: none;
 }
 
 /* Show only on mobile (≤ 768px) */
 @media (max-width: 1000px) {
-  .message-container {
-    display: flex;
-    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 10px;
-  }
+    .message-container {
+        display: flex;
+        background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 10px;
+    }
 }
 
 .icon {
@@ -2750,6 +2750,23 @@ a {
     text-align: center;
 }
 
+.icon-form {
+    display: inline-block;
+    
+    font-size: 18px;
+    line-height: 1;
+    
+    animation: pulse 2s infinite ease-in-out;
+}
 
+@keyframes pulse {
 
- 
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
