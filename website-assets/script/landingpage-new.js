@@ -284,10 +284,10 @@ function sendSubmit(event, formType) {
 
         // ✅ Validate Company Name
         if (!currentCompany) {
-            showFieldError('companyName', 'Company name is required');
+            showFieldError('companyName', 'Office or home name is required');
             isValid = false;
         } else if (currentCompany.length < 2) {
-            showFieldError('companyName', 'Company name must be at least 2 characters long');
+            showFieldError('companyName', 'Office or home name must be at least 2 characters long');
             isValid = false;
         }
 

@@ -42,6 +42,27 @@
 
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var specialDealSwiper = new Swiper('.special-deal', {
+                loop: true,
+                autoplay: {
+                    delay: 5000, // wait time before changing slide
+                    disableOnInteraction: false,
+                },
+                speed: 2000, // transition speed (ms) = 1 second fade/slide
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.special-deal .swiper-pagination',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
+
+
 
 </head>
 <link rel="canonical" href="https://www.worldstarfm.com/commercial-cleaning" />
@@ -55,13 +76,39 @@
 
 <link rel="stylesheet" href="./website-assets/css/landingpage-new.css">
 
-<body>
+<body style="padding-top: 30px;">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTVDNN" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Desktop Navbar -->
-    <nav class="navbar-unique-container container" id="desktopNavbar">
+    <div class="swiper special-deal" style="background-color: rgb(180, 26, 26); padding: 5px 0; position: fixed ; top: 0; z-index: 10001;">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide d-flex gap-1 align-items-center justify-content-center">
+
+                <iframe src="https://lottie.host/embed/950a3b8a-a50d-4fd1-b246-7205a43a88cc/7vXd3obIHh.json" width="20"
+                    height="20"></iframe>
+
+                <p style="color: #fff; font-size: 13px; font-weight: 700;">WE ARE NOT HIRING FOR ANY JOBS</p>
+
+            </div>
+
+            <div class="swiper-slide d-flex gap-1 align-items-center justify-content-center">
+
+                <iframe src="https://lottie.host/embed/950a3b8a-a50d-4fd1-b246-7205a43a88cc/7vXd3obIHh.json" width="20"
+                    height="20"></iframe>
+
+                <p style="color: #fff; font-size: 13px; font-weight: 700;">NO SUPPLIER INQUIRIES ACCEPTED</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar-unique-container container" id="desktopNavbar" style="margin-top: 29px;">
         <div class="navbar-unique-content ">
             <a href="#home" class="navbar-unique-logo ">
                 <img src="./website-assets/images/landing-page/WorldStarFMwhiteLogo.png" class="company-logo"
@@ -91,22 +138,20 @@
 
             <div class="navbar-unique-buttons">
                 <!-- <a href="tel:+971542528822" class="navbar-unique-btn primary-button">Call Us</a> -->
-                <a class="navbar-unique-btn button secondary-button" onclick="openUniqueContactModal()">GET FREE
+                <a class="navbar-unique-btn button secondary-button"
+                    href="https://api.whatsapp.com/send?phone=+971542528822&text=Hi, I want a free quote for your cleaning contract services.">
+                    <i class="fa-brands fa-whatsapp " style="margin-right: 5px;  font-size: 17px;"></i> GET FREE
                     QUOTE</a>
             </div>
         </div>
     </nav>
 
     <!-- Mobile Navbar -->
-    <div class="navbar-unique-mobile message-container ">
+    <!-- <div class=" message-container ">
         
-           
-            <p class="message-text">
-                🚫 PLEASE NOTE: CURRENTLY WE ARE NOT HIRING FOR JOBS
-            </p>
-        
-    </div>
-    <nav class="navbar-unique-mobile" id="mobileNavbar">
+
+    </div> -->
+    <nav class="navbar-unique-mobile" id="mobileNavbar" >
 
         <div class="navbar-unique-mobile-content">
             <div class="col-6">
@@ -117,24 +162,29 @@
             </div>
 
             <div class="navbar-unique-mobile-buttons col-6">
-                <a class="navbar-unique-mobile-btn button primary-button" onclick="openUniqueContactModal()" style="
+                <a class="navbar-unique-mobile-btn button primary-button"
+                    href="https://api.whatsapp.com/send?phone=+971542528822&text=Hi, I want a free quote for your cleaning contract services."
+                    style="
                   width: 100%;
                   display: flex;
                   justify-content: center; 
                   font-size: 14px;
                   font-weight: 500;
-                  ">GET FREE QUOTE</a>
+                  ">
+                    <i class="fa-brands fa-whatsapp " style="margin-right: 8px;  font-size: 19px;"></i>
+                    GET FREE QUOTE</a>
             </div>
         </div>
     </nav>
 
     <!-- Mobile Bottom Buttons -->
-    <div class="navbar-unique-bottom-buttons" >
+    <div class="navbar-unique-bottom-buttons">
         <div class="navbar-unique-bottom-content">
             <a href="tel:+971542528822" class="navbar-unique-bottom-btn navbar-unique-bottom-btn-call">
-                <i class="fa-solid fa-phone" style="margin-right: 5px;"></i>Call Us</a>
-            <a class="navbar-unique-bottom-btn navbar-unique-bottom-btn-visit" href="https://wa.me/971542528822">
-                <i class="fa-brands fa-whatsapp " style="margin-right: 5px;"></i>WhatsApp</a>
+                <i class="fa-solid fa-phone" style="margin-right: 5px;"></i>Call Us Now</a>
+            <a class="navbar-unique-bottom-btn navbar-unique-bottom-btn-visit"
+                href="https://api.whatsapp.com/send?phone=+971542528822&text=Hi, I want a free quote for your cleaning contract services.">
+                <i class="fa-brands fa-whatsapp " style="margin-right: 5px;"></i>Chat for Free Quote</a>
         </div>
     </div>
 
@@ -151,8 +201,9 @@
                 <div class="hero-main-content text-start text-lg-start ">
                     <div class="small" style="display: flex; align-items: center; justify-content: center; ">
                         <h5 class=" font-small mb-3 "
-                            style="background-color:  #001E61; color:white; text-align: center; border-radius: 13px; padding: 5px 15px; font-weight: bold;">
-                            DUBAI's TOP RATED CLEANING COMPANY
+                            style="background-color:  #001E61; color:white; text-align: center; border-radius: 13px; padding: 5px 15px; font-weight: bold; text-transform:uppercase;"
+                            >
+                            Professional Cleaning Services UAE
                         </h5>
                     </div>
                     <style>
@@ -167,12 +218,10 @@
 
                     <div class="mb-2 topHed">
                         <h1 class="font-weight-bold mainHedCon ">
-                            Professional cleaning services in Dubai for offices and homes
+                            Most Trusted Cleaning Company for Homes, Offices & Commercial Facilities
                         </h1>
                     </div>
-                    <h5 class="font-weight-medium mb-4  subTitle">Worldstar FM is most trusted cleaning company in dubai, delivering  spotless results for homes, villas, offices, and industrial facilities.</h5>
-
-                    <!-- Buttons -->
+                    <h5 class="font-weight-medium mb-4  subTitle">Premium cleaning service team equipped with advanced technology for homes, villas, offices, and industrial facilities across Dubai and Abu Dhabi</h5>
 
 
                     <!-- Features -->
@@ -189,7 +238,7 @@
                                 <path
                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <p class="font-weight-medium font-small mb-0">Trusted by 200+ Dubai Businesses</p>
+                            <p class="font-weight-medium font-small mb-0">Trusted by 200+ UAE Businesses</p>
                         </div>
                         <div class="d-flex align-items-center gap-2">
                             <svg class="star-icon" fill="currentColor" viewBox="0 0 20 20">
@@ -208,8 +257,9 @@
                     <div class="contact-form-container-topBar  text-dark  rounded shadow  " id="contactform">
                         <div class="p-4 "
                             style="background:#001E61; border-top-left-radius: 6px; border-top-right-radius: 6px;">
-                            <h2 class="form-title mb-2">Schedule Free Site Visit </h2>
-                            <p class="form-subtitle "><span class="icon-form" >⚠️</span> <strong> Slots filling fast </strong> - Book yours now. <br>We'll get back to you super fast.</p>
+                            <h2 class="form-title mb-2">Get Free Quote & Site Visit </h2>
+                            <p class="form-subtitle "><span class="icon-form">⚠️</span> <strong> Slots filling fast
+                                </strong> - Book yours now. <br>We'll get back to you super fast.</p>
                         </div>
                         <div class="p-4 bg-white"
                             style="border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;">
@@ -231,12 +281,12 @@
                                 <!-- Company & Location -->
                                 <div class="row g-3 mb-3">
                                     <div class="col-6">
-                                        <label class="form-label form-area">Company Name</label>
+                                        <label class="form-label form-area">Office or Home *</label>
                                         <input type="text" id="companyName" name="companyName" class="form-control"
-                                            placeholder="Your Company">
+                                            placeholder="Your Office or Home">
                                     </div>
                                     <div class="col-6">
-                                        <label class="form-label form-area">Location</label>
+                                        <label class="form-label form-area">Location *</label>
                                         <input type="text" id="userLocation" name="userLocation" class="form-control"
                                             placeholder="Your Location">
                                     </div>
@@ -292,8 +342,7 @@
                                 500+ Satisfied Clients Across Dubai
                             </h3>
                             <p class="feature-description-t1">
-                                From luxury villas to corporate towers, we've earned the trust of dubai's most
-                                discerning property owners.
+                                From luxury villas to corporate towers, we've earned the trust of uae's most discerning property owners.
                             </p>
                         </div>
                     </div>
@@ -310,7 +359,22 @@
                                 Same-Day Service Available
                             </h3>
                             <p class="feature-description-t1">
-                                Our professional cleaning services team can be at your doorstep within hours, not days.
+                                Our high end cleaning service team can be at your doorstep within hours, not days.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card-t1">
+                    <div class="feature-content-t1">
+                        <div class="feature-icon-t1">
+                            🤝
+                        </div>
+                        <div class="feature-text-t1">
+                            <h3 class="feature-title-t1">
+                                125+ Expert Team
+                            </h3>
+                            <p class="feature-description-t1">
+                                A highly trained team ready to deliver commercial contract cleaning you can trust.
                             </p>
                         </div>
                     </div>
@@ -325,8 +389,7 @@
                                 100% Satisfaction Guaranteed
                             </h3>
                             <p class="feature-description-t1">
-                                If you're not completely amazed, we'll return and make it right - free. That's our
-                                promise.
+                                If you're not completely amazed, we'll return and make it right - free. That's our promise.
                             </p>
                         </div>
                     </div>
@@ -567,7 +630,7 @@
                                     both building cleaning
                                     and comprehensive facility management has consistently exceeded our expectations. As
                                     a leading deep cleaning
-                                    company in dubai, they keep our premises spotless and ensure a safe, efficient
+                                    company in UAE, they keep our premises spotless and ensure a safe, efficient
                                     work environment across
                                     all sites. Since working together, we’ve seen significant improvements in efficiency
                                     and a reduction in
@@ -654,7 +717,6 @@
     </section>
 
     <section class="services-sectionS  section-spacing" style="background: #ebebed;">
-
         <div class="container pt-4 pt-md-0 ">
             <div class="row justify-content-center text-center">
                 <div class="col-md-6">
@@ -859,7 +921,7 @@
                     <p class="font-xlarge font-weight-bold secondary-text-color">Reach Out for Professional
                         Cleaning Services! </p>
                     <p class="font-medium font-weight-regular secondary-text-color">Experience the difference with
-                        Dubai's most trusted cleaning professionals. We deliver exceptional results that transform your
+                        UAE's most trusted cleaning professionals. We deliver exceptional results that transform your
                         space into a pristine environment.</p>
                     <div class="contact-info-section">
                         <!-- Phone Contact -->
@@ -884,8 +946,8 @@
                             <div class="contact-content">
                                 <div class="contact-title">Visit our office</div>
                                 <div class="contact-details">
-                                    <p>World Star Holding - dubai,</p>
-                                    <p>M-2, Mussafah, dubai</p>
+                                    <p>World Star Holding - UAE,</p>
+                                    <p>M-2, Mussafah, UAE</p>
                                 </div>
                             </div>
                         </div>
@@ -1045,7 +1107,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
     <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LcUAmYrAAAAAHUjaVAhyPcMmhUVc1L_uqodgEpZ"></script>
  -->
-
 
 
     <script src="website-assets/script/landingpage-new.js"></script>
