@@ -1775,21 +1775,21 @@ a {
 
 /* Background images for each service item */
 .service-item-a2:nth-child(1) {
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url('/website-assets/images/cleaning-3.webp');
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url('/website-assets/images/cleaning-3.webp');
      background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .service-item-a2:nth-child(2) {
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/website-assets/images/cleaning-2.webp');
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/website-assets/images/cleaning-2.webp');
      background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .service-item-a2:nth-child(3) {
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/website-assets/images/cleaning-1.webp');
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/website-assets/images/cleaning-1.webp');
 
      background-size: cover;
     background-position: center;
@@ -1797,7 +1797,7 @@ a {
 }
 
 .service-item-a2:nth-child(4) {
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/website-assets/images/cleaning-4.webp');
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/website-assets/images/cleaning-4.webp');
      background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
